@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheGame - Task Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="headerPart">
+            <div class="date"></div>
+            <div class="timer"></div>
+        </div>
+        <div class="headerPart">
+            <a href="index.html">Home</a>
+            <a href="settings.html">Settings</a>
+        </div>
+    </header>
+    <div class="background">
+        <div class="stats">
+            <div class="picture"></div>
+            <div class="level">
+                <div class="all">
+                    <p class="levelTextView"></p>
+                    <p class="gradeTextView"></p> 
+                    <p class="nomTextView"></p>
+                </div>
+                <div class="surExp">
+                    <div class="expTextView"></div>
+                    <div class="progressbar">
+                        <div class="progress"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="taskBoard">
+            <div class="inputBar">
+                <div class="input">
+                    <input type="date" id="dateInput" placeholder="Date">
+                    <input type="text" id="taskInput" placeholder="Task">
+                    <input type="number" id="expInput" placeholder="Experience">
+                    <input type="number" id="argInput" placeholder="Argument">
+                </div>
+                <div class="button">
+                    <button><i class="fas fa-plus-square"></i> Add Task</button>
+                </div>
+            </div>
+            <div class="task">
+                <ul class="todolist"></ul>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <script src="j.js"></script>
+</body>
+</html>
+

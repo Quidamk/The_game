@@ -1,0 +1,42 @@
+:root {
+    --FirstColor: #d4d4d4;
+    --dégradéin: linear-gradient(145deg, #e3e3e3, #bfbfbf);
+    --dégradéout: linear-gradient(145deg, #bfbfbf, #e3e3e3);
+    --radius: 10px; 
+    --margin: 10px; --marginwidth: 0px 10px; --marginheigh: 10px 0px;
+    --padding: 10px; --paddingwidth: 0px 10px; --paddingheigh: 10px 0px;
+    --shadowout: 5px 5px 9px #b4b4b4, -5px -5px 9px #f4f4f4;
+    --shadowin: inset 5px 5px 9px #b4b4b4, inset -5px -5px 9px #f4f4f4;
+}
+
+* {margin: 0;padding: 0;background: var(--FirstColor);color: black;}
+
+header {display: flex; justify-content: space-between;}
+.headerPart {margin: 10px;display: flex;}
+
+.headerPart div {
+
+    border-radius: var(--radius);
+        box-shadow:  var(--shadowin);                                            
+        line-height: 20px;
+        padding: var(--padding);
+        margin: var(--margin);
+        margin-left: 10px;
+        text-decoration: none;
+        outline: none;
+        border: none;
+
+}
+
+.headerPart a {
+    border-radius: var(--radius);
+    box-shadow:  var(--shadowout);
+    cursor: pointer;                                                
+    line-height: 20px;
+    padding: var(--padding);
+    margin: var(--margin);
+    margin-left: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}

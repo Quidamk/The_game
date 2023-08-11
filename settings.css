@@ -1,0 +1,45 @@
+:root {
+    --FirstColor: #d4d4d4;
+    --dégradéin: linear-gradient(145deg, #e3e3e3, #bfbfbf);
+    --dégradéout: linear-gradient(145deg, #bfbfbf, #e3e3e3);
+    --radius: 10px; 
+    --margin: 10px; --marginwidth: 0px 10px; --marginheigh: 10px 0px;
+    --padding: 10px; --paddingwidth: 0px 10px; --paddingheigh: 10px 0px;
+    --shadowout: 5px 5px 9px #b4b4b4, -5px -5px 9px #f4f4f4;
+    --shadowin: inset 5px 5px 9px #b4b4b4, inset -5px -5px 9px #f4f4f4;
+}
+
+* {margin: 0;padding: 0;background: var(--FirstColor);color: black;outline: none;border: none;}
+
+        .background
+        {border-radius: var(--radius); box-shadow: var(--shadowin);}
+       
+
+        .background {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1r 1r;
+            grid-template-areas: "a a""b c";height: 500px;
+            gap: 10px; padding: 20px;
+            margin: 10px;
+        }
+
+        .age {grid-area: a;}
+          
+        .poids {grid-area: b;}
+          
+        .skills {grid-area: c;}
+
+        .age, .mesure, .skills {
+            display: flex; flex-direction: column;justify-content: center; padding: 10px;
+            border-radius: var(--radius); box-shadow: var(--shadowout); gap: 5px;
+            }
+
+        input {text-align: center; padding: 5px;
+            height: 15px;border-radius: var(--radius); box-shadow: var(--shadowin); }
+
+            p {text-align: center;}
+
+            button {border-radius: var(--radius); box-shadow: var(--shadowout);}
+
+            .IMC { text-align: center;padding: 5px;margin: 10px; border-radius: var(--radius); box-shadow: var(--shadowout);}

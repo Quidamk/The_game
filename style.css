@@ -1,0 +1,89 @@
+:root {
+    --FirstColor: #d4d4d4;
+    --dégradéin: linear-gradient(145deg, #e3e3e3, #bfbfbf);
+    --dégradéout: linear-gradient(145deg, #bfbfbf, #e3e3e3);
+    --radius: 10px; 
+    --margin: 10px; --marginwidth: 0px 10px; --marginheigh: 10px 0px;
+    --padding: 10px; --paddingwidth: 0px 10px; --paddingheigh: 10px 0px;
+    --shadowout: 5px 5px 9px #b4b4b4, -5px -5px 9px #f4f4f4;
+    --shadowin: inset 5px 5px 9px #b4b4b4, inset -5px -5px 9px #f4f4f4;
+}
+
+* {margin: 0;padding: 0;background: var(--FirstColor);color: black;}
+
+.background {display: flex;margin:10px; height: 500px;gap: 10px;}
+
+        .stats, .taskBoard, input, .input-values, .progressBar, .progressbar 
+        {border-radius: var(--radius); box-shadow: var(--shadowin);}
+        .picture, .inputBar, .level, button, .todo, .all
+        {border-radius: var(--radius); box-shadow: var(--shadowout);}
+        
+        .headerPart a {
+            border-radius: var(--radius);
+            box-shadow: var(--shadowout);
+            padding: var(--padding);
+        }
+
+        .stats {display:grid; grid-column: 1fr; height:auto; flex:1;}
+
+                .picture {
+                    margin: 10% auto;
+                    width: 150px; height: 150px;
+                }
+
+                .level {
+                    margin: 10px;
+                    padding: 10px;
+                }
+                    .surExp {display: flex;justify-content: space-evenly;align-items: center;}
+                    .all {display: flex;justify-content: space-evenly;margin: 10px;}
+                    .progressbar {overflow: hidden; width: 300px;height: 30px; margin: 10px;}
+                    .progress {border-radius: var(--radius); width: 50%;height: 30px; background-color: brown;}
+
+
+        .taskBoard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height:auto;
+            flex:3;   
+        }
+
+                .inputBar {
+                    display: flex;
+                    margin: 10px;
+                    padding: var(--padding);
+                    justify-content: space-evenly;
+                }
+
+                        .input {display:flex;justify-content:space-between;gap:5px}
+
+                        input {flex: 1;outline: none;border: none;}
+                        button {
+                            margin: var(--margin);
+                            display: flex;
+                            align-items: center;outline: none;border: none;
+                            padding: 10px;
+                        }
+
+                        .todo {
+                            
+                            margin: 10px 0;
+                            width: 60vw;
+                            list-style: none;
+                            display: flex;
+                            justify-content: space-around;  
+                        }
+
+                        .input-values {
+                            
+                            padding: var(--padding);
+                            margin: 5px;
+                            min-width: 500px;
+                            max-width: 500px;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                            text-align: center;
+                        }
+
+                        input {text-align: center; }
